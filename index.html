@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>parvathi super market</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.png" alt="logo" class="logo" />
+    </div>
+    <div class="nav-center">
+      <input type="text" class="search-bar" placeholder="Search for products..." />
+    </div>
+    <div class="nav-right">
+      <button class="icon-btn" title="Login"><span class="material-icons">account_circle</span></button>
+      <button class="icon-btn cart-btn" title="Cart">
+        <span class="material-icons">shopping_cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+  <h3>PRODUCTS</h3>
+  <ul>
+    <li><a href="skincare.html">Skin Care</a></li>
+    <li><a href="makeup.html">Makeup</a></li>
+    <li><a href="bath-body.html">Bath & Body</a></li>
+    <li><a href="haircare.html">Hair Care</a></li>
+    <li><a href="personal-hygiene.html">Personal Hygiene</a></li>
+    <li><a href="oral-care.html">Oral Care</a></li>
+    <li><a href="mens-grooming.html">Men's Grooming</a></li>
+    <li><a href="fragrances.html">Fragrances</a></li>
+    <li><a href="health-wellness.html">Health & Wellness</a></li>
+    <li><a href="appliances.html">Appliances</a></li>
+  </ul>
+</aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>All Products</h2>
+
+      <!-- Filters -->
+      <div class="filters">
+        <!-- <select id="brandFilter">
+          <option value="all">Brand</option>
+          <option value="nivea">Nivea</option>
+          <option value="ks">Kamasutra</option>
+          <option value="fogg">Fogg</option>
+          <option value="parkavenue">Park Avenue</option>
+        </select>
+        <select id="volumeFilter">
+          <option value="all">Volume</option>
+          <option value="150">150 ml</option>
+          <option value="220">220 ml</option>
+        </select> -->
+        <div class="sort">
+          <!-- <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option>Relevance</option>
+          </select> -->
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+     <div class="product-grid">
+    <!-- Multiple Sample Products -->
+    <div class="card" data-id="p01">
+  <img src="images/1.jpg" alt="Nivea" />
+  <h4>Crunch Chocolate</h4>
+  <p>MRP <s>₹ 315</s> <br> Our Price ₹ 157</p>
+  <p class="off">₹ 158 OFF</p>
+  <div class="cart-controls">
+    <button class="add-btn">ADD TO CART</button>
+    <div class="qty-controls" style="display: none;">
+      <button class="qty-minus">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-plus">+</button>
+    </div>
+  </div>
+</div>
+
+    <div class="card" data-id="p02">
+  <img src="images/1.jpg" alt="Nivea" />
+  <h4>Crunch Chocolate</h4>
+  <p>MRP <s>₹ 315</s> <br> Our Price ₹ 157</p>
+  <p class="off">₹ 158 OFF</p>
+  <div class="cart-controls">
+    <button class="add-btn">ADD TO CART</button>
+    <div class="qty-controls" style="display: none;">
+      <button class="qty-minus">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-plus">+</button>
+    </div>
+  </div>
+</div>
+
+    <div class="card" data-id="p03">
+  <img src="images/1.jpg" alt="Nivea" />
+  <h4>Crunch Chocolate</h4>
+  <p>MRP <s>₹ 315</s> <br> Our Price ₹ 157</p>
+  <p class="off">₹ 158 OFF</p>
+  <div class="cart-controls">
+    <button class="add-btn">ADD TO CART</button>
+    <div class="qty-controls" style="display: none;">
+      <button class="qty-minus">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-plus">+</button>
+    </div>
+  </div>
+</div>
+
+   <div class="card" data-id="p04">
+  <img src="images/1.jpg" alt="Nivea" />
+  <h4>Crunch Chocolate</h4>
+  <p>MRP <s>₹ 315</s> <br> Our Price ₹ 157</p>
+  <p class="off">₹ 158 OFF</p>
+  <div class="cart-controls">
+    <button class="add-btn">ADD TO CART</button>
+    <div class="qty-controls" style="display: none;">
+      <button class="qty-minus">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-plus">+</button>
+    </div>
+  </div>
+</div>
+
+
+    
+  </div>
+    </main>
+  </div>
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart" class="close-btn">&times;</button>
+  </div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-footer">
+    <p>Total: ₹<span id="cartTotal">0</span></p>
+
+  </div>
+  <div class="cart-footer">
+  
+  <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+</div>
+
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+</body>
+</html>
+
+<!-- style.css -->
+<style>
+/* Include the full CSS provided earlier including navbar, search-bar, sidebar, cards, and responsive design */
+</style>
+
+<!-- script.js -->
+
